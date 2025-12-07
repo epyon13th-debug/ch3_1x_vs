@@ -12,7 +12,7 @@ def search_name(request,user):
         print(model_to_dict(user))
         return HttpResponse(f"Search result for name:{user},email:{user.email}")
     except:
-        return HttpResponse("No user here.ok!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        return HttpResponse("No user here.ok!!!!!!")
 
 
 def useradd(request,name):
