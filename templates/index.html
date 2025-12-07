@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoooooooooo!!!!!!</title>
+</head>
+<body>
+    <h2>會員登錄系統</h2>
+    {% if request.user.is_authenticated %}
+        歡迎!{{ request.user.username }}你已經登錄成功
+        <p><a href="/longout">登出</a></p>
+    {% else %}
+        <P>你尚未登錄</P>
+        <P><a href="/longin">登入</a></P>
+    {% endif %}
+    <span style="color: red;">{{ message }}</span>
+</body>
+</html>
